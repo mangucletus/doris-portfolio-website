@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .section {
+    @apply py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-12;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #3B82F6;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-blue-600 hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply text-blue-700 bg-blue-100 hover:bg-blue-200 focus:ring-blue-500;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200;
+  }
+  
+  .nav-link.active {
+    @apply text-blue-600;
+  }
+  
+  .social-link {
+    @apply text-gray-500 hover:text-blue-600 transition-colors duration-200;
+  }
+}
