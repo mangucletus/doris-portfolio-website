@@ -19,7 +19,7 @@ const About: React.FC = () => {
 
             <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-2xl">
               I am Doris Lonta, a passionate journalist and advocate for human and community development. 
-              Having benefitted from the generosity and advocacy of selfless individuals, I have made it 
+              Having benefited from the generosity and advocacy of selfless individuals, I have made it 
               my mission to use my platform to amplify the voices of the vulnerable and less privileged in society.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6 max-w-2xl">
